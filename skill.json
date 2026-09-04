@@ -1,0 +1,39 @@
+{
+  "name": "genpark-fullstack-env-variable-drift-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Full-stack cross-tier environment variable drift auditor ensuring secure boundary separation between client and server secrets.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "vibe-coding",
+  "tags": [
+    "bolt-new",
+    "supabase",
+    "env-vars",
+    "secret-leaks",
+    "fullstack-dev"
+  ],
+  "inputs": {
+    "client_env_keys": {
+      "type": "array"
+    },
+    "backend_env_keys": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "env_audit_id": {
+      "type": "string"
+    },
+    "client_keys_count": {
+      "type": "integer"
+    },
+    "env_example_template_generated": {
+      "type": "boolean"
+    },
+    "drift_audit_report_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
